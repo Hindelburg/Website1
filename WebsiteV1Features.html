@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 
-<div class="p-3 mb-2 bg-danger text-white">
-    <nav>
-        <a href="WebsiteV1.html">Home</a> |
-        <a href="WebsiteV1About.html">About</a> |
-        <a href="WebsiteV1Features.html">Features</a>
-    </nav>
-
-
-
-
+<div>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,8 +11,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
+    <style>
+        div.padding {
+            padding-left: 1cm;
+        }
+    </style>
 
 
     <html>
@@ -31,37 +25,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
         <link rel="stylesheet" href="w3.css">
-
     </head>
-    <body>
-        <h1 class="font-weight-bold">
-            Features
-        </h1>
-        <h2>
-            Generation Types
-        </h2>
-        <p>
-            Story generator uses 2 primary methods for generating a sentence; machine learning, and a context free grammar.
-        </p>
-        <h2>
-            Prompt Types
-        </h2>
-        <p>
-            There are several different prompt types available in Story Generator.
-            <dl>
-                <li>
-                    Concept ideas.
-                </li>
-                <li>
-                    Compound, complex, compound complex, or simple sentences.
-                </li>
-                <li>
-                    Character prompts.
-                </li>
-                <li>
-                    Setting prompts.
-                </li>
-            </dl>
-        </p>
 
-    </html>
+
+
+    <!--title-->
+    <body class="jumbotron">
+        <div>
+            <h1 class="text-center">
+                Prompt Generator
+            </h1>
+
+
+            <!--Navigation Bar-->
+            <font size="4">
+                <nav class="navbar navbar-default">
+                    <div class="padding">
+                        <a href="WebsiteV1.html">Home</a>
+                        <a href="WebsiteV1About.html">About</a>
+                        <a href="WebsiteV1Features.html">Features</a>
+                    </div>
+                </nav>
+            </font>
+
+
+            <!--Buttons-->
+            <font size="5">
+                <div class="col-sm-2" style="background-color:lightgray">
+                    <a href="WebsiteV1Features.html" class="button">
+                        Features
+                    </a>
+                    <br />
+                </div>
+            </font>
+
+
+            <!--Block Text-->
+            <div class="col-sm-10">
+                <p>
+                    There are currently no features in this website. This is just a placeholder for what is to come.
+                </p>
+
+                <table style="width:90% ">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Character Generator</td>
+                        <td>Traditional</td>
+                        <td>Not available</td>
+                    </tr>
+                    <tr>
+                        <td>Map Generator</td>
+                        <td>Traditional</td>
+                        <td>Not available</td>
+                    </tr>
+                    <tr>
+                        <td>Prompt generator</td>
+                        <td>Machine Learning</td>
+                        <td>Not available</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+
+        </div>
+</div>
+    </body>
+</html>
