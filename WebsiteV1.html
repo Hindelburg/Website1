@@ -38,47 +38,63 @@
                     </nav>
             </font>
             
-
             <!--Buttons-->
             <font size="5">
-                <div class="col-sm-2" style="background-color:lightgray">
-                    <a href="WebsiteV1.html" class="button">
+                <div class="col-sm-3" style="background-color:lightgray">
+                    <button type="button" onclick="setText('Concept')", class="SideButton">
                         Concepts
-                    </a>
+                    </button>
                     <br />
-                    <a href="WebsiteV1.html" class="button">
+                    <button type="button" onclick="setText('Sentence')" , class="SideButton">
                         Sentences
-                    </a>
+                    </button>
                     <br />
-                    <a href="WebsiteV1.html" class="button">
+                    <button type="button" onclick="setText('Character')" , class="SideButton">
                         Characters
-                    </a>
+                    </button>
                     <br />
-                    <a href="WebsiteV1.html" class="button">
+                    <button type="button" onclick="setText('Setting')" , class="SideButton">
                         Settings
-                    </a>
+                    </button>
                     <br />
-                    <a href="WebsiteV1.html" class="button">
+                    <button type="button" onclick="setText('Style')" , class="SideButton">
                         Styles
-                    </a>
+                    </button>
                     <br />
-                    <a href="WebsiteV1.html" class="button">
+                    <button type="button" onclick="setText('Chain')" , class="SideButton">
                         Chains
-                    </a>
+                    </button>
                     <br />
                 </div>
             </font>
 
             
             <!--Block Text-->
-            <div>
-                <p class="col-sm-10">
+            <div class="col-sm-9">
+                <p>
                     To use prompt generator, select which style of story prompt you want to have generated on the 
                     left side. None of these links are yet operational due to the actual prompt generating
                     software is still in developement.
                 </p>
-            </div>
+                <font size="4">
+                    <div class="titleRow", id="Title">
+                            Concept Generator
+                    </div>
+                </font>
+                <p class="GenerationField" id="GenerationField">
+
+                </p>
+                <div class="buttonRow" , id="GenerateButton" onclick="generatePrompt()">
+                    <button type="button" onclick="setText('Chain')">
+                        Generate
+                    </button>
+                </div>
+
+
+</div>
         </div>
     </div>
+        <script src="script.js"></script>
     </body>
+
 </html>

@@ -5,3 +5,25 @@
         p {
             text-indent: 50px;
         }
+	.SideButton{
+	    width:98%
+	}
+	.GenerationField{
+	    padding-left: 1cm;
+	    padding-right: 1cm;
+	    width:650px;
+	    height:150px;
+            background-color: white;
+	}
+	.buttonRow{
+	    padding-left: 1cm;
+	    padding-right: 1cm;
+	    width:650px;
+            background-color: lightGrey;
+	}
+	.titleRow{
+	    padding-left: 1cm;
+	    padding-right: 1cm;
+	    width:650px;
+            background-color: white;
+	}
