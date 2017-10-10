@@ -1,8 +1,11 @@
-var storedType;
+var storedType = 'Concept';
 
 function setText(type) {
-    document.getElementById('Title').innerHTML = type + " Generator";
-    storedType = type
+    if(storedType != type){
+        document.getElementById('Title').innerHTML = type + " Generator";
+        storedType = type
+        document.getElementById('GenerationField').innerHTML = ""
+    }
 }
 
 function generatePrompt() {
