@@ -58,6 +58,27 @@ namespace Calculator
             double a;
             double b;
             double c;
+
+            double test;
+
+            string[] divided = input.Split(new char[0]);
+
+            for(int i = 0; i < divided.Length; i++)
+            {
+                if(Double.TryParse(testsplit[i], out value))
+                {
+                    stack.Push(Convert.ToDouble(divided[i]));
+                }
+                if (stack.IsEmpty())
+                    throw new ArgumentException("Improper input format. Stack became empty when expecting second operand.");
+                b = (Convert.ToDouble(stack.Pop()));
+                if (stack.IsEmpty())
+                    throw new ArgumentException("Improper input format. Stack became empty when expecting first operand.");
+                a = (Convert.ToDouble(stack.Pop()));
+                c = DoOperation(a, b, s);
+
+                stack.Push(Convert.ToDouble(c));
+            }
         }
 
     }
