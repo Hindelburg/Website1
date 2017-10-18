@@ -9,6 +9,11 @@ namespace Calculator
     class Calculator
     {
         private IStackADT stack = new LinkedStack();
+
+        /// Main method for calculator.
+        ///
+        /// parameters: string[] args
+        /// Returns: void
         static void Main(string[] args)
         {
             Calculator app = new Calculator();
@@ -21,6 +26,10 @@ namespace Calculator
             Console.WriteLine("Bye.");
         }
 
+        /// Starts the calculator and keeps it running until q. 
+        ///
+        /// parameters: NA
+        /// Returns: bool (True when you wish to continue to use the app.)
         bool DoCalculation()
         {
             Console.WriteLine("Please enter Q to quit\n");
@@ -46,6 +55,10 @@ namespace Calculator
             return true;
         }
 
+        /// Tests to make sure the input is valid for calculator use.
+        ///
+        /// parameters: string input (Input is the calculation you wish to perform.)
+        /// Returns: string (The answer to the inputted question.)
         string EvaluatePostFixInput(string input)
         {
             if(input == null || input == "")
@@ -86,6 +99,10 @@ namespace Calculator
             return stack.Pop().ToString();
         }
 
+        /// Does the actual calculations, catches errors when you divide by 0 or use an invalid operator.
+        ///
+        /// parameters: double a, double b, string s. (First value of expression, second value of expression, the operator.)
+        /// Returns: double (The answer to the problem given in double format.)
         double DoOperation(double a, double b, string s)
         {
             double c = 0.0;
