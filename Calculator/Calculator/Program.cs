@@ -14,7 +14,7 @@ namespace Calculator
             Calculator app = new Calculator();
             bool playAgain = true;
             Console.WriteLine("\nPostfix Calculator. Recognizes these operators: + - * /");
-            while(playagain)
+            while(playAgain)
             {
                 playAgain = app.DoCalculation();
             }
@@ -29,7 +29,7 @@ namespace Calculator
 
             input = Console.ReadLine();
 
-            if(input[0] == "q" || input[0] == "Q")
+            if(input[0] == 'q' || input[0] == 'Q')
             {
                 return false;
             }
@@ -40,7 +40,7 @@ namespace Calculator
             }
             catch(ArgumentException e)
             {
-                output = e.Message();
+                output = e.Message;
             }
             Console.WriteLine("\n\t>>> " + input + " = " + output);
             return true;
@@ -65,12 +65,13 @@ namespace Calculator
 
             for(int i = 0; i < divided.Length; i++)
             {
-                if (Double.TryParse(testsplit[i], out value))
+                if (Double.TryParse(divided[i], out test))
                 {
                     stack.Push(Convert.ToDouble(divided[i]));
                 }
                 else
                 {
+                    s = divided[i];
                     if (stack.IsEmpty())
                         throw new ArgumentException("Improper input format. Stack became empty when expecting second operand.");
                     b = (Convert.ToDouble(stack.Pop()));

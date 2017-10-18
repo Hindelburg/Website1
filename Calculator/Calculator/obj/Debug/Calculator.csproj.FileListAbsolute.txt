@@ -1,0 +1,2 @@
+C:\Users\lego_\Documents\Projects\project1\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\lego_\Documents\Projects\project1\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
