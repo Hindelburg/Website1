@@ -8,9 +8,9 @@ namespace Calculator
 {
     class LinkedStack : IStackADT
     {
-        Node top;
+        private Node top;
 
-        LinkedStack()
+        public LinkedStack()
         {
             top = null;
         }
@@ -32,8 +32,8 @@ namespace Calculator
             {
                 return null;
             }
-            object topItem = top.data;
-            top = top.next;
+            object topItem = top.Data;
+            top = top.Next;
             return topItem;
         }
         
@@ -43,7 +43,7 @@ namespace Calculator
             {
                 return null;
             }
-            return top.data;
+            return top.Data;
         }
 
         bool IsEmpty()
