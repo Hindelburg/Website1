@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class LinkedStack : IStackADT
+    public class LinkedStack : IStackADT
     {
         private Node top;
 
@@ -15,7 +15,7 @@ namespace Calculator
             top = null;
         }
 
-        object Push(object newItem)
+        public object Push(object newItem)
         {
             if(newItem == null)
             {
@@ -26,7 +26,7 @@ namespace Calculator
             return newItem;
         }
 
-        object Pop()
+        public object Pop()
         {
             if(IsEmpty())
             {
@@ -36,8 +36,8 @@ namespace Calculator
             top = top.Next;
             return topItem;
         }
-        
-        object Peek()
+
+        public object Peek()
         {
             if(IsEmpty())
             {
@@ -46,12 +46,12 @@ namespace Calculator
             return top.Data;
         }
 
-        bool IsEmpty()
+        public bool IsEmpty()
         {
             return top == null;
         }
 
-        void clear()
+        public void Clear()
         {
             top = null;
         }

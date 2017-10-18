@@ -25,7 +25,7 @@ namespace Calculator
         {
             Console.WriteLine("Please enter Q to quit\n");
             string input = "2 2 + ";
-            Console.WriteLine("> ");
+            Console.Write("> ");
 
             input = Console.ReadLine();
 
@@ -52,7 +52,7 @@ namespace Calculator
             {
                 throw new ArgumentException("Null or the empty string are not valid postfix expressions.");
             }
-            stack.clear();
+            stack.Clear();
 
             string s;
             double a;
